@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .bannar-security-services{
+    width: 100%;
+    background-color: #ff0000;
+    color: #ffff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .bannar-security-services h2{
+    font-size: 2rem;
+  }
+  
+
+  .security-services-main-section{
+    width: 60%;
+    margin: auto;
+    padding: 5rem 0;
+    
+  }
+  .security-services-main-section h1{
+    color: #ff0000;
+    opacity: 0.8;
+    
+  }
+  .security-services-main-section img{
+    width: 100%;
+    margin: 1rem 0;
+    animation: AboutR  2s ease-out forwards;
+  }
+  .security-services-main-section p{
+    opacity: 0.9;
+  }
+  
+
+
+
+
+@keyframes AboutR {
+from {
+  opacity: 0;
+  transform: translateX(150px);
+}
+
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+@media screen and (max-width:1150px){
+    .security-services-main-section{
+        width: 70%;
+
+    }
+}
+@media screen and (max-width:890px){
+    .security-services-main-section{
+        width: 80%;
+
+    }
+    .bannar-security-services h2{
+        font-size: 1.6rem;
+      }
+}
+@media screen and (max-width:650px){
+    .security-services-main-section{
+        width: 90%;
+        padding: 3rem 0;
+
+    }
+    .bannar-security-services h2{
+        font-size: 1.3rem;
+        
+      }
+      .bannar-security-services{
+        padding: 1.4rem;
+      }
+      .security-services-main-section h1{
+        font-size: 1.2rem;
+      }
+}

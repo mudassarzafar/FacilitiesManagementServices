@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .contactUS-main{
+    width: 100%;
+    height: 30rem;
+    background-image: url(../images/contac-us-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contactus-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    
+  }
+  
+  .contactus-inner h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffff;
+  }
+  .contactus-inner p{
+    color: #ff0000;
+    text-shadow: 1px 1px 5px #000000;
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding-top: 1rem;
+    
+  }
+
+.address-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 3rem 0 5rem 0;
+}
+.address-div h1{
+    color: #ff0000;
+    opacity: 0.9;
+    margin-bottom: 8rem;
+}
+.address-inner{
+    padding: 2rem 1.5rem;
+    border: 1px solid #ff0000;
+    box-shadow: 1px 1px 5px #000000;
+    background-color: #000000;
+    
+    
+}
+
+.address-inner h3{
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ff0000;
+}
+.address-inner p{
+    color: #ffff;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+@media screen and (max-width:890px) {
+    
+
+    .contactus-inner h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ffff;
+      }
+      .contactus-inner p{
+        color: #ff0000;
+        text-shadow: 1px 1px 5px #000000;
+        font-size: 1.3rem;
+        font-weight: 900;
+        padding-top: 1rem;
+        
+      }
+    
+    .address-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        padding: 2rem 0 0 0;
+    }
+    .address-div h1{
+        color: #ff0000;
+        opacity: 0.9;
+        margin-bottom: 5rem;
+    }
+    .address-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ff0000;
+        box-shadow: 1px 1px 5px #000000;
+        background-color: #000000;
+        width: 100%;
+        
+        
+    }
+    
+    .address-inner h3{
+        color: #ff0000;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid #ff0000;
+    }
+    .address-inner p{
+        color: #ffff;
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+    
+    .map iframe{
+        width: 100%;
+    }
+    
+}

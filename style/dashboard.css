@@ -1,0 +1,1171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+.navbar-section {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #ffff;
+  z-index: 9999;
+
+}
+
+.parent-navbar {
+  width: 75%;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ff0000;
+}
+
+.logo-navbar {
+  width: 350px;
+  height: 5rem;
+}
+
+.logo-navbar img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-navbar {
+  width: 490px;
+
+}
+
+.list-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.list-navbar ul li {
+  position: relative;
+}
+
+.list-navbar ul a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.list-navbar ul a:hover {
+  color: #ff0000;
+}
+
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px #000000;
+  transform: translateX(-1rem);
+  margin-top: 2rem;
+  width: 180px;
+}
+
+.dropdown li a {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: #ffff;
+  /* border-bottom: 1px solid #ff0000; */
+  display: block;
+  font-size: 0.8rem;
+
+}
+
+.dropdown li a:hover {
+  color: #ffff;
+  background-color: #ff0000;
+}
+
+.dropdown2 {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px #000000;
+  transform: translateX(-1rem);
+  margin-top: 2rem;
+  width: 180px;
+}
+
+.dropdown2 li a {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: #ffff;
+  border-bottom: 1px solid #ff0000;
+  display: block;
+  font-size: 0.8rem;
+
+}
+#hard-service,#soft-service{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+}
+.dropdown2 li a:hover {
+  color: #ffff;
+  background-color: #ff0000;
+}
+
+.our-company:hover .dropdown {
+  padding: 0;
+  margin: 0;
+
+  visibility: visible;
+}
+
+.our-services:hover .dropdown2 {
+  padding: 0;
+  margin: 0;
+
+  visibility: visible;
+}
+.our-services img {
+  width: 17px;
+  height: 17px;
+}
+
+.our-company img {
+  width: 17px;
+  height: 17px;
+}
+
+.our-services {
+  list-style-type: none;
+  position: relative;
+}
+ #hard-services-pic2,#soft-services-pic2{
+  /* visibility: hidden; */
+  display: none; 
+ } 
+
+
+
+
+.hard-services-sub-menu {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px #000000;
+  top: 0.5rem;
+  left: 100%;
+  width: 180px;
+
+}
+.hard-services-sub-menu li a {
+  font-size: 0.75rem;
+}
+
+.hard-services:hover .hard-services-sub-menu {
+  padding: 0;
+  margin: 0;
+  visibility: visible;
+}
+
+.soft-services-sub-menu {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px #000000;
+  top: 0;
+  left: 100%;
+  width: 188px;
+}
+
+.soft-services-sub-menu li a {
+  font-size: 0.75rem;
+}
+
+.soft-services img {
+  margin-left: 2.9rem;
+  width: 12px;
+  height: 12px;
+}
+
+
+.hard-services img {
+  margin-left: 2.9rem;
+  width: 12px;
+  height: 12px;
+}
+
+
+.soft-services:hover .soft-services-sub-menu {
+  padding: 0;
+  margin: 0;
+  visibility: visible;
+}
+#menu-burger{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  
+  display: none;
+}
+#menu-burger:hover{
+  box-shadow: 1px 1px 5px #828282;
+}
+
+#hard-service,#soft-service{
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  
+
+  
+}
+
+/* intro-company-bannar */
+
+.intro-company-bannar {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  height: 5rem;
+  width: 75%;
+  margin: auto;
+  background-color: #ff0000;
+  
+  z-index: -1;
+  margin-top: 1.5rem;
+}
+
+.intro-company-bannar h2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+
+  color: #ffffff;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+
+
+
+
+/* Leading facilities and cards  */
+
+
+.leading-facilities-and_cards {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.info-facilities {
+  width: 35%;
+}
+
+.contact-info {
+  width: 100%;
+  padding-bottom: 5rem;
+  border-bottom: 2px dotted #ff0000;
+}
+
+.contact-info h2 {
+  font-size: 1.7rem;
+  opacity: 0.7;
+  padding-bottom: 2rem;
+}
+
+.child-contact {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #000000;
+  opacity: 0.7;
+  font-weight: 500;
+
+}
+
+.child-contact h3 {
+  margin: 0 5px;
+}
+
+.child-contact img {
+  width: 20px;
+  height: 20px;
+}
+
+#child-3 {
+  border: none;
+}
+
+.leading-facilities {
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.leading-facilities h3 {
+  color: #ff0000;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+
+.leading-facilities p {
+
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.discover-btn {
+  background-color: #ff0000;
+  color: #ffff;
+  border: none;
+  padding: 8px 12px 8px 12px;
+
+}
+
+.discover-btn:hover {
+
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  background-color: #ffff;
+}
+
+
+
+
+.cards-div {
+  margin-top: 4.5rem;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 480px;
+  opacity: 0;
+  animation: anim_card 2s ease-out forwards;
+}
+
+@keyframes anim_card {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-soft {
+  width: 47%;
+  height: 200px;
+  background-image: url(../images/soft-services.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6%;
+  border: 1px solid #ff0000;
+  transition: transform 0.3s;
+    
+}
+
+.card-soft a {
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  text-shadow: 1px 1px 1px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-soft:hover {
+  transform: scale(105%);
+}
+
+.card-hard {
+  width: 47%;
+  height: 200px;
+  background-image: url(../images/hard-services.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6%;
+  border: 1px solid #ff0000;
+  transition: transform 0.3s;
+
+}
+
+.card-hard a {
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  text-shadow: 1px 1px 1px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-hard:hover {
+  transform: scale(105%);
+}
+
+.card-project-management {
+  width: 47%;
+  height: 200px;
+  background-image: url(../images/project-management.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1%;
+  transition: transform 0.3s;
+  border-radius: 6%;
+  border: 1px solid #ff0000;
+}
+
+.card-project-management a {
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  text-shadow: 1px 1px 1px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-project-management:hover {
+  transform: scale(105%);
+}
+
+.card-contactus {
+  width: 47%;
+  height: 200px;
+  background-image: url(../images/contact-us.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1%;
+  transition: transform 0.3s;
+  border-radius: 6%;
+  border: 1px solid #ff0000;
+}
+
+.card-contactus a {
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  text-shadow: 1px 1px 1px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-contactus:hover {
+  transform: scale(105%);
+}
+
+
+
+/* section-managing_portfolio */
+
+.section-managing_portfolio {
+  width: 100%;
+  padding: 5rem 0;
+  margin-top: 5rem;
+  background-color: #ff0000;
+  color: #ffff;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.managing_portfolio_div {
+  width: 40rem;
+  margin: auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ffff;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.managing_portfolio_div h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+
+}
+
+.managing_portfolio_div p {
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.managing_portfolio_div button {
+  padding: 8px 12px;
+  border: 1px solid #ffff;
+  color: #ffff;
+  background-color: transparent;
+}
+
+.managing_portfolio_div button:hover {
+
+  border: 1px solid #ffff;
+  color: #ff0000;
+  background-color: #ffff;
+}
+
+.heading-img {
+  display: flex;
+  width: 100%;
+}
+
+.heading-img img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+/* section-background-img */
+
+.section-background-img {
+  width: 100%;
+  height: 40rem;
+  background-image: url(../images/backgroundimg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.background-img-div {
+  width: 100%;
+  height: 40rem;
+  background-color: #222;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+
+}
+
+.parent-info-company {
+  width: 70rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  
+
+}
+
+.child-info-company {
+  width: 20rem;
+  padding: 2rem 3rem;
+  border: 2px solid #ffffff;
+  color: #ffff;
+  background-color: #000000;
+  text-align: center;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 20%;
+  position: relative;
+  perspective: 1000px;
+}
+
+ .child-info-company img {
+  transition: transform 0.4s ease;
+  
+}
+
+.child-info-company:hover img{
+  transform: rotateY(180deg);
+  
+} 
+
+
+.child-info-company:hover {
+  background-color: #190101;
+}
+
+.child-info-company h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* section-info-bannar */
+
+
+
+.section-info-bannar {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #cfd1d2;
+
+}
+
+.parent-info-bannar {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.child-info-bannar {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.child-info-bannar button {
+  background-color: #ff0000;
+  color: #ffff;
+  padding: 10px 15px;
+  border: none;
+  font-size: 1rem;
+}
+
+.child-info-bannar button:hover {
+  background-color: #ff0000;
+  color: #ffff;
+  padding: 12px 15px;
+  box-shadow: 1px 1px 5px #000000;
+}
+
+.child-info-bannar div {
+
+  border-right: 2px solid #ff0000;
+  padding-right: 1rem;
+  opacity: 0.8;
+}
+
+
+
+
+/* footer */
+
+
+
+.section-footer {
+  width: 100%;
+  padding: 7rem 0 5rem 0;
+  background-color: #231f20;
+  ;
+}
+
+.footer-parent {
+  width: 60rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 6rem;
+}
+
+.footer-child {
+  width: 20%;
+  color: white;
+
+}
+
+.footer-child h2 {
+  color: #ffff;
+  margin-bottom: 1rem;
+}
+
+.footer-child a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+
+}
+
+.footer-child a li {
+  margin-bottom: 1rem;
+
+}
+
+.footer-child a li:hover {
+  color: #afadad;
+  margin-left: 2px;
+
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.copyright p {
+  font-size: 0.9rem;
+}
+
+
+
+/* media query */
+
+
+@media screen and (max-width:1410px) {
+  .parent-navbar{
+    width: 80%;
+  }
+  .intro-company-bannar{
+    width: 80%;
+  }
+  .leading-facilities-and_cards{
+    width: 80%;
+  }
+}
+@media screen and (max-width:1310px) {
+  .parent-navbar{
+    width: 85%;
+  }
+  .intro-company-bannar{
+    width: 85%;
+  }
+  .leading-facilities-and_cards{
+    width: 85%;
+  }
+}
+@media screen and (max-width:1210px) {
+  .parent-navbar{
+    width: 90%;
+  }
+  .intro-company-bannar{
+    width: 90%;
+  }
+  .leading-facilities-and_cards{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .parent-navbar{
+    width: 95%;
+  }
+  .intro-company-bannar{
+    width: 95%;
+  }
+  .leading-facilities-and_cards{
+    width: 95%;
+  }
+  .info-facilities {
+    width: 38%;
+  }
+  .cards-div{
+    width: 58%;
+  }
+  .section-background-img{
+    height: 70rem;
+  }
+  .background-img-div{
+    height: 70rem;
+  }
+  .parent-info-company{
+    width: 85%;
+    
+  }
+  .child-info-company{
+    width: 20rem;
+    
+  }
+  .parent-info-bannar{
+    width: 85%;
+  }
+  .footer-parent{
+    width: 70%;
+    
+  }
+  .footer-child{
+    width: 35%;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:890px){
+  
+   .navbar-section{
+    position: relative;
+    margin-bottom: 3rem;
+   }
+  .parent-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-navbar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; /* Add some space between logo and list */
+  }
+  
+    #logo-img{
+      width: 350px;
+      height: 4rem;
+    }
+ 
+  .list-navbar {
+     
+    width: 90%;
+    padding-left: 0;
+    background-color: #ffff;
+    margin-left: 0;
+    
+  }
+  #company,#service,#hard-service,#soft-service{
+    display: inline-block;
+    border: none;
+    visibility: visible;
+    /* display: block; */
+  }
+ 
+  #hard-services-pic2,#soft-services-pic2{
+    /* visibility: hidden; */
+    margin-left: 2rem;
+    display: block; 
+    display: inline-block;
+   } 
+   #soft-services-pic2{
+    margin-left: 1.75rem;
+   }
+  
+  #hard-services-pic2:hover{
+    box-shadow: 1px 1px 5px #000000;
+  }
+  #soft-services-pic2:hover{
+    box-shadow: 1px 1px 5px #000000;
+  }
+  #service-img:hover{
+    box-shadow: 1px 1px 5px #000000;
+  }
+  #company-img:hover{
+    box-shadow: 1px 1px 5px #000000;
+  }
+  #company,#service{
+    width: 90%;
+  }
+  #soft-service,#hard-service{
+    width: 75%;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000000;
+  }
+  
+  #hard-service-img1,#soft-service-img1{
+    display: none;
+  }
+  /* .soft-services:hover .soft-services-sub-menu{
+    margin: 0;
+    padding: 0;
+  } */
+
+  
+  .main-li,.main-li2,.our-services,.our-company{
+    padding: 0.7rem 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+  }
+  .main-li2{
+    border: none;
+   
+  }
+.our-company a{
+  padding: 0.3rem 0;
+    color: #000000;
+    opacity: 0.9;
+    border-bottom: 1px solid #000000;
+    background-color: #ffff;
+    font-size: 0.8rem;
+}
+  .dropdown li a,.dropdown2 li a{
+    padding: 0.3rem 1rem;
+    color: #000000;
+    opacity: 0.9;
+    border-bottom: 1px solid #000000;
+    background-color: #ffff;
+    font-size: 0.8rem;
+  
+  }
+  .dropdown li a:hover {
+    opacity: 1;
+    color: #ff0000;
+    background-color: #ffff;
+    /* font-size:0.9rem; */
+  } 
+ .dropdown2 li a:hover {
+    opacity: 1;
+    color: #ff0000;
+    background-color: #ffff;
+    /* font-size:0.9rem; */
+  } 
+  .list-navbar ul {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+
+    /* justify-content: none; */
+  }
+  
+  .dropdown,
+  .dropdown2,
+  .hard-services-sub-menu,
+  .soft-services-sub-menu {
+    position: relative;
+    visibility: visible;
+    /* width: 100%; */
+    box-shadow: none;
+    transform: none;
+    margin-top: 0;
+    left: 0;
+  }
+  .hard-services:hover .hard-services-sub-menu{
+    left: 1rem;
+  }
+   .soft-services:hover .soft-services-sub-menu{
+    left: 1rem;
+  }
+  .hard-services-sub-menu{
+    padding-left: 1rem;
+  }
+  .soft-services-sub-menu{
+    padding-left: 1rem;
+    
+  }
+  .hard-services-sub-menu,.soft-services-sub-menu:hover{
+    bottom: 0;
+    margin-top: 0;
+    top: 0;
+    /* left: 0.8rem; */
+  }
+  #menu-burger {
+    display: block;
+  } 
+
+  .intro-company-bannar{
+    height: 4.5rem;
+
+  }
+  .intro-company-bannar h2{
+    font-size: 1.2rem;
+  }
+  .info-facilities {
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+  .cards-div{
+    width: 40%;
+    margin-top: 0;
+    row-gap: 0.8rem; 
+  }
+  .card-soft{
+    width: 100%;
+  }
+  .card-hard{
+    width: 100%;
+  }
+  .card-contactus{
+    width: 100%;
+  }
+  .card-project-management{
+    width: 100%;
+  }
+
+  .section-background-img{
+    height: 80rem;
+  }
+  .background-img-div{
+    height: 80rem;
+  }
+  .parent-info-bannar{
+    width: 95%;
+  }
+  .child-info-bannar{
+    width: 18rem;
+  }
+  #child-info-bannar2{
+    width: 30rem;
+  }
+
+  
+
+.list-navbar{
+  display: none;
+}
+}
+
+
+
+
+@media screen and (max-width:670px){
+  .parent-navbar{
+    padding-bottom: 0;
+  }
+  #logo-img{
+    width: 270px;
+    height: 3.5rem;
+    
+  }
+  
+
+  
+  .intro-company-bannar{
+    height: 3rem;
+  }
+  .intro-company-bannar h2{
+    font-size: 1rem;
+  }
+  .leading-facilities-and_cards{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-facilities{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .contact-info{
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .cards-div{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 17rem;
+  }
+  .managing_portfolio_div{
+    width: 90%;
+  }
+  .managing_portfolio_div h2
+  {
+    font-size: 1.85rem;
+  }
+
+  .child-info-bannar{
+    width: 30%;
+  }
+  #child-info-bannar2{
+    width: 60%;
+    
+  }
+  #child-info-bannar2 h3{
+   font-size: 0.8rem;
+  }
+  #child-info-bannar2 h4{
+    font-size: 0.6rem;
+   }
+   .child-info-bannar button{
+    padding: 0.3rem 0.5rem;
+   }
+   .footer-parent{
+    width: 85%;
+    
+  }
+  .footer-child{
+    width: 45%;
+  }
+  .footer-child h2{
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width:510px) {
+
+  .leading-facilities-and_cards{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-div{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 17rem;
+  }
+  .managing_portfolio_div{
+    width: 90%;
+  }
+  
+
+  .child-info-bannar{
+    width: 25%;
+  }
+  #child-info-bannar2{
+    width: 73%;
+    
+  }
+  
+   .child-info-bannar button{
+    font-size: 0.7rem;
+   }
+   .footer-parent{
+    width: 90%;
+    
+  }
+  .footer-child{
+    width: 48%;
+  }
+  
+
+
+}
+

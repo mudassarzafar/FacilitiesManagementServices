@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .careers-main-div{
+    width: 100%;
+    height: 25rem;
+    background-image: url(../images/Career-Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .careers-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-size: 3.2rem;
+  }
+
+  .careers-main-section{
+    width: 100%;
+    padding: 10rem 0 8rem 0;
+  }
+  .careers-main-section-div{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .careers-main-div-left{
+
+    width: 100%;
+    
+
+
+  }
+  #userTableBody{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .user-entry{
+    width: 45%;
+    
+  }
+  .user-title{
+    
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 1rem;
+
+  }
+  .user-description{
+    width: 100%;
+    background-color: white;
+    color: #000000;
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  .careers-main-div-right{
+
+    width: 100%;
+    margin-top: 3rem;
+
+  }
+ 
+
+  @media screen and (max-width:1410px){
+
+    .careers-main-section-div{
+        width: 65%;
+    }
+  }
+
+  @media screen and (max-width:1310px){
+
+    .careers-main-section-div{
+        width: 70%;
+    }
+  }
+  @media screen and (max-width:1210px){
+
+    .careers-main-section-div{
+        width: 75%;
+    }
+  }
+  @media screen and (max-width:1010px){
+
+    .careers-main-section-div{
+        width: 85%;
+    }
+  }
+  @media screen and (max-width:890px){
+
+    .careers-main-section-div{
+        width: 95%;
+    }
+    .careers-inner{
+        font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width:670px){
+
+    .careers-main-section-div{
+        width: 95%;
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+    }
+    .careers-main-div-left{
+
+        width: 70%;
+        margin: auto;
+    
+    
+      }
+      .careers-main-div-right{
+    
+        width: 70%;
+        margin: auto;
+        
+    
+      }
+
+  }
+
+  @media screen and (max-width:510px){
+
+    .careers-main-section-div{
+        width: 95%;
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+    }
+    .careers-main-div-left{
+
+        width: 90%;
+        margin: auto;
+    
+    
+      }
+      .careers-main-div-right{
+    
+        width: 90%;
+        margin: auto;
+        
+    
+      }
+
+  }

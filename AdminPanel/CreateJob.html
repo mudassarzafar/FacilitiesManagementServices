@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <script defer src="../Main.js" ></script> 
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../StyleAdmin/AdminDasboard.css">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job</title>
+</head>
+
+<body>
+    <div class="section-admin-navbar">
+        <div class="admin-main-navbar">
+            
+            <div class="nav-list-admin">
+                
+                    <h1 style="font-size: 3.5rem;color: red; text-shadow: 1px 1px 5px black; ">Admin Panel</h1>
+            </div>
+            <div class="main-heading-admin-nav">
+                <a href="../Dashboard.html" style="text-decoration: none; color: white; "><img src="../images/logo.png" alt="" style="width: 100%;height: 4rem;"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="create-job-form-main">
+        
+        <form onsubmit="return validateForm()">
+            <div class="inner-div-job-form">
+                <h1>Create Job</h1>
+                <label for="title">Add Title:</label>
+                <br />
+                <input type="text" id="addtitle" placeholder="Add Title" required>
+                <br />
+                <label for="title">Add Description:</label>
+                <br />
+                <textarea name="" id="adddescription" cols="30" rows="10" placeholder="Add Description of Job" required></textarea>
+        
+                <input type="submit" name="" id="job-btn">
+            </div>
+        </form>
+       
+    </div>
+    <table id="adminTableBody" style="width: 70%;margin: auto;">
+        <h1 style="text-align: center;text-shadow: 1px 1px 5px black;margin-bottom: 2rem;">Manage Jobs</h1>
+        <table id="userTableBody" style="display: none;">
+        
+        </table>
+    </table>
+                
+               
+
+
+    </div>
+    <div style="background-color: black; padding: 1rem; margin-top: 5rem;">
+        <p style="text-align: center; color: white; ">Copyright 2021 - All rights reserved.</p>
+    </div>
+    
+</body>
+
+</html>

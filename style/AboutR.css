@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .main-aboutR-bacground-img{
+    position: relative;
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    background-image: url(../images/aboutR.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: AboutR  2s ease-out forwards;
+  }
+ 
+
+
+@keyframes AboutR {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  .aboutR-heading-inside-img{
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem ;
+    text-align: center;
+    background-color:  #ff0000;
+    color: #ffff;
+    bottom: 0;
+    
+  }
+
+
+  /* AboutR-first-paragraph */
+
+  .AboutR-first-paragraph{
+    width: 70%;
+    padding: 5rem 0 4rem 0;
+    margin: auto;
+    border-bottom: 1.7px dotted #ff0000;
+
+  }
+  .AboutR-first-paragraph p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+
+
+  /* AboutR-main-paragraph-section */
+
+
+  .AboutR-main-paragraph-section{
+    width: 65%;
+    margin: auto;
+    padding: 3rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .AboutR-main-paragraph-section p{
+    opacity: 0.85;
+  }
+
+  .AboutR-main-paragraph-left,.AboutR-main-paragraph-right{
+    width: 45%;
+
+  }
+
+
+
+  /* our-core-value-section */
+
+
+  .our-core-value-section{
+    width: 100%;
+    padding: 4rem 0 7rem 0;
+    background-color: #ff0000;
+    color: #ffff;
+    text-align: center;
+  }
+  .core-value-parent-div{
+    width: 75%;
+    margin: auto;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+  .core-value-child{
+     width: 18%;
+     border: 1px solid #ffff;
+     padding: 1rem 0.3rem;
+     border-radius: 1rem ;
+  }
+  .core-value-child img {
+    transition: transform 0.5s ease;
+  }
+  .core-value-child:hover{
+    box-shadow: 1px 1px 5px #000000;
+  }
+  .core-value-child:hover img {
+    transform: rotateY(180deg);
+  }
+  .core-value-child h2{
+    margin: 0.7rem 0;
+    }
+
+
+    /* media query */
+
+
+    @media screen and (max-width:1410px){
+        .main-aboutR-bacground-img{
+            width: 75%;
+        }
+        .AboutR-first-paragraph{
+            width: 75%;
+            
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 70%;
+          }
+          .core-value-parent-div{
+            width: 80%;
+          }
+
+    }
+    @media screen and (max-width:1310px){
+        .main-aboutR-bacground-img{
+            width: 80%;
+        }
+        .AboutR-first-paragraph{
+            width: 80%;
+            
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 75%;
+          }
+          .core-value-parent-div{
+            width: 85%;
+          }
+
+    }
+
+    @media screen and (max-width:1210px){
+        .main-aboutR-bacground-img{
+            width: 85%;
+        }
+        .AboutR-first-paragraph{
+            width: 85%;
+            
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 80%;
+          }
+          .core-value-parent-div{
+            width: 90%;
+          }
+
+    }
+    @media screen and (max-width:1150px){
+      
+        .main-aboutR-bacground-img{
+            width: 90%;
+        }
+        .AboutR-first-paragraph{
+            width: 90%;
+            
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 85%;
+          }
+          .core-value-parent-div{
+            width: 90%;
+          }
+          .core-value-child{
+            width: 30%;
+            
+          }
+
+    }
+
+    @media screen and (max-width:890px){
+        .main-aboutR-bacground-img{
+            
+            height: 50vh;
+        }
+        .AboutR-first-paragraph{
+            width: 95%;
+            
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 90%;
+          }
+          .core-value-parent-div{
+            width: 90%;
+          }
+          .core-value-child{
+            width: 30%;
+            
+          }
+
+    }
+    @media screen and (max-width:670px){
+        .main-aboutR-bacground-img{
+            
+            height: 45vh;
+        }
+        .aboutR-heading-inside-img{
+            padding: 1.2rem;
+        }
+
+        .main-aboutR-bacground-img h2{
+            
+            font-size: 1.3rem;
+            
+        }
+        
+        .AboutR-first-paragraph{
+            width: 95%;
+            padding: 3rem 0 2rem 0;
+        
+          }
+          .AboutR-main-paragraph-section{
+            width: 90%;
+          }
+          .core-value-parent-div{
+            width: 90%;
+          }
+          .core-value-child{
+            width: 45%;
+            
+          }
+
+    }
+    @media screen and (max-width:510px){
+        .main-aboutR-bacground-img{
+            
+            height: 40vh;
+        }
+        .main-aboutR-bacground-img h2{
+            
+            font-size: 1.1rem;
+        }
+        .aboutR-heading-inside-img{
+            padding: 1rem;
+        }
+        .AboutR-first-paragraph{
+            width: 95%;
+            
+        
+          }
+         
+          .AboutR-main-paragraph-section{
+            width: 90%;
+            flex-direction: column;
+          }
+
+          .AboutR-main-paragraph-left{
+            width: 60%;
+            margin: auto;
+            border-bottom: 1px solid #ff0000;
+            padding-bottom:1rem ;
+          }
+          .AboutR-main-paragraph-right{
+            width: 60%;
+            margin: auto;
+            padding-top: 1rem;
+            
+          }
+          .core-value-parent-div{
+            width: 90%;
+          }
+
+          .core-value-child{
+            width: 60%;
+            margin: auto;
+            
+          }
+
+    }
